@@ -24,6 +24,8 @@
  * -----------------------
  * PATCH和DELETE是不被浏览器所支持的，但可通过添加隐藏域的方式来欺骗服务器
  */
-Route::get('/', 'StaticPagesController@home');
-Route::get('/help', 'StaticPagesController@help');
-Route::get('/about', 'StaticPagesController@about');
+Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/help', 'StaticPagesController@help')->name('help');
+Route::get('/about', 'StaticPagesController@about')->name('about');
+
+Route::get('/signup', 'UsersController@create')->name('signup');
