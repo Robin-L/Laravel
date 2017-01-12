@@ -13,12 +13,12 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password', 60);
-            $table->rememberToken();
-            $table->timestamps();
+            $table->increments('id');   // 创建了一个integer类型的自增id
+            $table->string('name');     // 创建name字段
+            $table->string('email')->unique();  // 值为唯一值
+            $table->string('password', 60);     // 最大长度为60
+            $table->rememberToken();    // 为用户创建一个remember_token字段
+            $table->timestamps();       // 创建created_at 和 updated_at字段
         });
     }
 
