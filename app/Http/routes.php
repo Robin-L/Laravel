@@ -28,4 +28,11 @@ Route::get('/', 'StaticPagesController@home')->name('home');
 Route::get('/help', 'StaticPagesController@help')->name('help');
 Route::get('/about', 'StaticPagesController@about')->name('about');
 
-Route::get('/signup', 'UsersController@create')->name('signup');
+//Route::get('/signup', 'UsersController@create')->name('signup');
+get('signup', 'UsersController@create')->name('signup');
+// 第一个参数为资源名称，第二个参数为控制名称
+resource('users', 'UsersController');
+
+get('login', 'SessionsController@create')->name('login');   // 显示登录页面
+post('login', 'SessionsController@store')->name('login');   // 创建新会话（登录）
+delete('logout', 'SessionsController@destory')->name('logout'); // 销毁会话（退出登录）

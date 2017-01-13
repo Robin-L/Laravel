@@ -1,0 +1,36 @@
+Arguments: 
+  D:\Program Files\nodejs5\node.exe D:\Yarn\bin\yarn.js add jquery --save
+
+PATH: 
+  D:\Program Files\Git\cmd;D:\Program Files\ImageMagick-7.0.1-Q16;D:\Program Files\ImageMagick-6.9.3-Q16;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Svn\bin;D:\Program Files\Git\cmd;D:\Program Files\nodejs5\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Users\JS-LaiRB\AppData\Roaming\Composer\vendor\bin;D:\xampp\php;D:\emacs\bin;D:\Android\android-sdk\tools;D:\Android\android-sdk\platform-tools;C:\ProgramData\ComposerSetup\bin;C:\bin;D:\Vagrant\bin;D:\Yarn\bin;D:\Python\;D:\Python\Scripts\;D:\Program Files\Java\jdk1.8.0_65\bin;D:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Users\JS-LaiRB\AppData\Roaming\npm;D:\Program Files\Python3;C:\ProgramData\chocolatey\bin;C:\Users\JS-LaiRB\AppData\Local\Yarn\.bin
+
+Yarn version: 
+  0.18.1
+
+Node version: 
+  5.3.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "private": true,
+    "devDependencies": {
+      "gulp": "^3.8.8"
+    },
+    "dependencies": {
+      "laravel-elixir": "^4.0.0",
+      "bootstrap-sass": "^3.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: ENOENT: no such file or directory, open 'D:\web\www\laravel\node_modules\node-sass\node_modules\gaze\LICENSE-MIT'
+      at Error (native)
