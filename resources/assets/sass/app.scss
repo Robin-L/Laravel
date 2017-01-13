@@ -162,3 +162,23 @@
      background-color: transparent;
    }
  }
+ /*Users index*/
+ .users {
+   list-style: none;
+   margin: 0;
+   padding-left: 0;
+   li {
+     overflow: auto;
+     padding: 10px 0;
+     border-bottom: 1px solid $gray-lighter;
+   }
+ }
+ /* User edit*/
+ .gravatar_edit {
+   margin: 15px auto;
+   text-align: center;
+   .gravatar {
+     float: none;
+     max-width: 100px;
+   }
+ }
