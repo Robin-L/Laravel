@@ -36,3 +36,11 @@ resource('users', 'UsersController');
 get('login', 'SessionsController@create')->name('login');   // 显示登录页面
 post('login', 'SessionsController@store')->name('login');   // 创建新会话（登录）
 delete('logout', 'SessionsController@destory')->name('logout'); // 销毁会话（退出登录）
+
+get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email'); // 激活账号路由
+
+// 密码重置
+get('password/email', 'Auth\PasswordController@getEmail')->name('password.reset');       // 显示重置密码的邮箱发送页面
+post('password/email', 'Auth\PasswordController@postEmail')->name('password.reset');     // 处理重置密码的邮箱发送操作
+get('password/reset/{token}', 'Auth\PasswordController@getReset')->name('password.edit');// 显示重置密码的密码更新页面
+post('password/reset', 'Auth\PasswordController@postReset')->name('password.update');    // 显示重置密码的密码更新请求
