@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9d68ffc-4328-4dce-b81f-822fe28002a2" name="Default" comment="" />
+    <list default="true" id="a9d68ffc-4328-4dce-b81f-822fe28002a2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -229,12 +231,12 @@
       <workItem from="1484294078504" duration="4104000" />
       <workItem from="1484646592718" duration="3626000" />
       <workItem from="1484720117448" duration="3518000" />
-      <workItem from="1485226855719" duration="106000" />
+      <workItem from="1485226855719" duration="245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35766000" />
+    <option name="totallyTimeSpent" value="35905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="352" y="254" width="1101" height="655" extended-state="0" />
